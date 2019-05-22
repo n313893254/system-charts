@@ -5,6 +5,13 @@ enabled: true
 replicaCount: 1
 enableNamespacesByDefault: false
 nodeSelector: {}
+resources:
+  requests:
+    cpu: 100m
+    memory: 100Mi
+  limits:
+    cpu: 200m
+    memory: 200Mi
 
 # Specify the pod anti-affinity that allows you to constrain which nodes
 # your pod is eligible to be scheduled based on labels on pods that are

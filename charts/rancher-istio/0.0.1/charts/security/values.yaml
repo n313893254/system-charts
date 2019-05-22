@@ -6,6 +6,13 @@ replicaCount: 1
 selfSigned: true # indicate if self-signed CA is used.
 createMeshPolicy: true
 nodeSelector: {}
+resources:
+  requests:
+    cpu: 10m
+    memory: 10Mi
+  limits:
+    cpu: 20m
+    memory: 20Mi
 
 # Specify the pod anti-affinity that allows you to constrain which nodes
 # your pod is eligible to be scheduled based on labels on pods that are
